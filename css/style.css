@@ -1,0 +1,108 @@
+/* *{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --boton-color:#99b9ff;
+    --number-color: #df4c4c;
+    --back-color: #44eb8a;
+}
+
+[theme= "dark"]{
+    --boton-color:#5d5e5f;
+    --number-color: #7b8311;
+    --back-color: #3d0c5a;
+}
+
+[theme= "light"]{
+    --boton-color:#f05a15;
+    --number-color: #f38ad4;
+    --back-color: #e5f366;
+}
+
+.container{
+    background-color: var(--back-color);
+    height: 30lh;
+}
+
+.number__title{
+    color: var(--number-color);
+}
+
+.button__check{
+    background-color: var(--boton-color);
+    width: 20%;
+    height: 20px;
+    border: none;
+} */
+
+.redButton.horizTranslate2 {
+    -webkit-transition: -webkit-transform 0.1s linear;
+    -webkit-transform: translateX(20px);
+}
+
+.redButton.horizTranslate3 {
+    -webkit-transition: -webkit-transform 0.1s linear;
+    -webkit-transform: translateX(40px);
+}
+
+.redButton.horizTranslate1 {
+    -webkit-transition: -webkit-transform 0.1s linear;
+    -webkit-transform: translateX(0px);
+}
+
+#outerContainer {
+    position: relative;
+    width: 111px;
+    height: 98px;
+    background-color: #4A5B7E;
+}
+
+#buttonContainer {
+    background-color: #222D41;
+    width: 71px;
+    height: 28px;
+    position: relative;
+    left: 20px;
+    top: 45px;
+    border-radius: 14px;
+}
+
+.redButton {
+    width: 16px;
+    height: 16px;
+    background-color: #DB3D2B;
+    border-radius: 8px;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+
+#legendTextContainer {
+    left: 22px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.legendText {
+    display: inline-block;
+    width: 20px;
+    padding-bottom: 33px;
+    cursor: default;
+    user-select: none;
+}
+
+#message {
+    border: 1px solid #cccccc;
+    display: inline-block;
+    padding: 4px;
+    margin-top: 6px;
+    font-family: Arial;
+    font-size: 10pt;
+}

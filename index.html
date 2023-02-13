@@ -6,21 +6,43 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- <div class="container">
+        <div class="numbers">
+            <h4 class="number__title">1</h4>
+            <h4 class="number__title">2</h4>
+            <h4 class="number__title">3</h4>
+        </div>
 
+        <div class="buttons">
+            <div class="container__button">
+                <button class="button__check"></button>
+            </div>
+            <div class="container__button">
+                <button class="button__check"></button>
+            </div>
+            <div class="container__button">
+                <button class="button__check"></button>
+            </div>
+        </div>
+    </div> -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div id="outerContainer">
+        <div id="buttonContainer">
+            <div class="redButton"></div>
+        </div>
+    
+        <div id="legendTextContainer">
+            <div class="legendText" onclick="go_to_1()">1</div>
+            <div class="legendText" onclick="go_to_2()">2</div>
+            <div class="legendText" onclick="go_to_3()">3</div>
+        </div>
+    </div>
+    <div id="message">Switch is in position 1</div>
+
+    <script src="js/js.js"></script>
 </body>
 </html>
