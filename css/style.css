@@ -37,6 +37,91 @@
     border: none;
 } */
 
+:root{
+    /* backgrounds */
+    /* main background */
+    --very-dark-desaturated-blue-mainBg: hsl(222, 26%, 31%);
+    /* toggle background, keypad background */
+    --very-dark-desaturated-blue-toggleBg: hsl(223, 31%, 20%);
+    /* screen background */
+    --very-dark-desaturated-blue-screenBg: hsl(224, 36%, 15%);
+
+    /* keys */
+    /* key background */
+    --desaturated-dark-blue-keyBg: hsl(225, 21%, 49%);
+    /* key shadow */
+    --desaturated-dark-blue-keyShd: hsl(224, 28%, 35%);
+    /* key background, toggle */
+    --red-keyBg: hsl(6, 63%, 50%);
+    /* key shadow */
+    --dark-red-keyShd: hsl(6, 70%, 34%);
+    /* key background */
+    --light-grayish-orange-keyBg: hsl(30, 25%, 89%);
+    /* key shadow */
+    --grayish-orange-keyShd: hsl(28, 16%, 65%);
+
+    /* text */
+    --very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+[theme = "theme2"]{
+    /* backgrounds */
+    /* main background */
+    --ligth-gray-mainBg: hsl(0, 0%, 90%);
+    /* toggle background, keypad background */
+    --grayish-red-toggleBg: hsl(0, 5%, 81%);
+    /* screen background */
+    --very-light-gray-screenBg: hsl(0, 0%, 93%);
+
+    /* keys */
+    /* key background */
+    --dark-moderate-cyan-keyBg: hsl(185, 42%, 37%);
+    /* key shadow */
+    --very-dark-cyan-keyShd: hsl(185, 58%, 25%);
+    /* key background, toggle */
+    --orange-keyBg: hsl(25, 98%, 40%);
+    /* key shadow */
+    --dark-orange-keyShd: hsl(25, 99%, 27%);
+    /* key background */
+    --light-grayish-yellow-keyBg: hsl(45, 7%, 89%);
+    /* key shadow */
+    --dark-grayish-orange-keyShd: hsl(35, 11%, 61%);
+
+    /* text */
+    --very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --white: hsl(0, 0%, 100%);
+}
+
+[theme = "theme3"]{
+    /* backgrounds */
+    /* main background */
+    --very-dark-violet-mainBg: hsl(268, 75%, 9%);
+    /* toggle background, keypad background screen background */
+    --very-dark-violet-toggleBg: hsl(268, 71%, 12%);
+
+    /* keys */
+    /* key background */
+    --dark-violet-keyBg: hsl(281, 89%, 26%);
+    /* key shadow */
+    --vivid-magenta-keyShd: hsl(285, 91%, 52%);
+    /* key background, toggle */
+    --pure-cyan-keyBg: hsl(176, 100%, 44%);
+    /* key shadow */
+    --soft-cyan-keyShd: hsl(177, 92%, 70%);
+    /* key background */
+    --very-dark-violet-keyBg: hsl(268, 47%, 21%);
+    /* key shadow */
+    --dark-magenta-keyShd: hsl(290, 70%, 36%);
+
+    /* text */
+    --light-yellow: hsl(52, 100%, 62%);
+    --very-dark-blue: hsl(198, 20%, 13%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
 .redButton.horizTranslate2 {
     -webkit-transition: -webkit-transform 0.1s linear;
     -webkit-transform: translateX(20px);
