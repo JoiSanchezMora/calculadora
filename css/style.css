@@ -79,6 +79,58 @@
 
 body{
     background-color: var(--main-background);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.title{
+    color: var(--color-text);
+}
+
+.subtitle{
+    color: var(--color-text);
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding-bottom: 12px;
+}
+
+.themeContainer{
+    display: flex;
+    align-items: flex-end;
+}
+
+#toggleContainer {
+    position: relative;
+    width: 111px;
+    height: 65px;
+    background-color: var(--main-background);
+}
+
+#buttonContainer {
+    background-color: var(--toggle-background);
+    width: 71px;
+    height: 28px;
+    position: relative;
+    left: 20px;
+    top: 35px;
+    border-radius: 14px;
+}
+
+.redButton {
+    width: 16px;
+    height: 16px;
+    background-color: var(--toggle);
+    border-radius: 8px;
+    position: relative;
+    top:6px;
+    left: 6px;
 }
 
 .redButton.horizTranslate2 {
@@ -96,48 +148,21 @@ body{
     -webkit-transform: translateX(0px);
 }
 
-#themeContainer {
-    position: relative;
-    width: 111px;
-    height: 98px;
-    background-color: var(--main-background);
-}
-
-#buttonContainer {
-    background-color: var(--toggle-background);
-    width: 71px;
-    height: 28px;
-    position: relative;
-    left: 20px;
-    top: 45px;
-    border-radius: 14px;
-}
-
-.redButton {
-    width: 16px;
-    height: 16px;
-    background-color: var(--toggle);
-    border-radius: 8px;
-    position: relative;
-    top: 6px;
-    left: 6px;
-}
 
 #legendTextContainer {
     left: 22px;
     display: inline-block;
     position: absolute;
-    top: 23px;
+    top:23px;
     color: var(--color-text);
-    font-family: Arial;
-    font-size: 10pt;
+    font-size: 11px;
     text-align: center;
 }
 
 .legendText {
     display: inline-block;
     width: 20px;
-    padding-bottom: 33px;
+    padding-bottom: 20px;
     cursor: default;
     user-select: none;
 }
