@@ -20,3 +20,8 @@ function go_to_3() {
     toggleSwitch.classList.remove('horizTranslate2');
     toggleSwitch.classList.remove('horizTranslate1');
 }
+
+function value(){
+    console.log(document.getElementById("key_1").textContent);
+    console.log(document.getElementById("key_2").textContent);
+}

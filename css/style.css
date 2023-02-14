@@ -23,7 +23,7 @@
     /* text */
     --panel-text: hsl(221, 14%, 31%);
     --color-text: hsl(0, 0%, 100%);
-    --equal-text: hsl(221, 14%, 31%);
+    --equal-text: hsl(0, 0%, 100%);
     --white: hsl(0, 0%, 100%);
 
 }
@@ -48,7 +48,7 @@
     /* text */
     --panel-text: hsl(60, 10%, 19%);
     --color-text: hsl(60, 10%, 19%);
-    --equal-text: hsl(60, 10%, 19%);
+    --equal-text: hsl(0, 0%, 100%);
     --white: hsl(0, 0%, 100%);
 }
 
@@ -165,4 +165,139 @@ body{
     padding-bottom: 20px;
     cursor: default;
     user-select: none;
+}
+
+.result__container{
+    background-color: var(--screen-background);
+    width: 90%;
+    margin: 20px auto;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.result{
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.numbers__panel{
+    background-color: var(--keypad-background);
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "k7 k8 k9 del"
+    "k4 k5 k6 k_plus"
+    "k1 k2 k3 k_minus"
+    "k_point k0 k_division k_product"
+    "reset reset equal equal";
+    gap: 15px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.default__settings{
+    display: grid;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.panel__text{
+    color: var(--panel-text);
+    background-color: var(--key-background-3);
+    font-size: 32px;
+    box-shadow: 0px 3px 0px 0px var(--key-shadow-3);
+    padding-top: 15px;
+}
+
+.special__panel{
+    background-color: var(--key-background-1);
+    color: var(--white);
+    box-shadow: 0px 3px 0px 0px var(--key-shadow-1);
+}
+
+.equal__key{
+    grid-area: equal;
+    background-color: var(--key-background-2);
+    color: var(--equal-text);
+    box-shadow: 0px 3px 0px 0px var(--key-shadow-2);
+}
+
+.k1{
+    grid-area: k1;
+    
+}
+
+.k2{
+    grid-area: k2;
+}
+
+.k3{
+    grid-area: k3;
+}
+
+.k4{
+    grid-area: k4;
+}
+
+.k5{
+    grid-area: k5;
+}
+
+.k6{
+    grid-area: k6;
+}
+
+.k7{
+    grid-area: k7;
+}
+
+.k8{
+    grid-area: k8;
+}
+
+.k9{
+    grid-area: k9;
+}
+
+.k0{
+    grid-area: k0;
+}
+
+.del{
+    grid-area: del;
+}
+
+.k_plus{
+    grid-area: k_plus;
+}
+
+.k_minus{
+    grid-area: k_minus;
+}
+
+.k_point{
+    grid-area: k_point;
+} 
+
+.k_division{
+    grid-area: k_division;
+} 
+
+.k_product{
+    grid-area: k_product;
+}
+
+.reset{
+    grid-area: reset;
 }
