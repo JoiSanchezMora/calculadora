@@ -1,41 +1,7 @@
-/* *{
+*{
     margin: 0;
     box-sizing: border-box;
 }
-
-:root{
-    --boton-color:#99b9ff;
-    --number-color: #df4c4c;
-    --back-color: #44eb8a;
-}
-
-[theme= "dark"]{
-    --boton-color:#5d5e5f;
-    --number-color: #7b8311;
-    --back-color: #3d0c5a;
-}
-
-[theme= "light"]{
-    --boton-color:#f05a15;
-    --number-color: #f38ad4;
-    --back-color: #e5f366;
-}
-
-.container{
-    background-color: var(--back-color);
-    height: 30lh;
-}
-
-.number__title{
-    color: var(--number-color);
-}
-
-.button__check{
-    background-color: var(--boton-color);
-    width: 20%;
-    height: 20px;
-    border: none;
-} */
 
 :root{
     /* backgrounds */
@@ -55,9 +21,10 @@
     --toggle: hsl(6, 63%, 50%);
 
     /* text */
-    --text-1: hsl(221, 14%, 31%);
-    --text-2: hsl(221, 14%, 31%);
-    --text-white: hsl(0, 0%, 100%);
+    --panel-text: hsl(221, 14%, 31%);
+    --color-text: hsl(0, 0%, 100%);
+    --equal-text: hsl(221, 14%, 31%);
+    --white: hsl(0, 0%, 100%);
 
 }
 
@@ -79,9 +46,10 @@
     --toggle: hsl(25, 98%, 40%);
 
     /* text */
-    --text-1: hsl(60, 10%, 19%);
-    --text-2: hsl(60, 10%, 19%);
-    --text-white: hsl(0, 0%, 100%);
+    --panel-text: hsl(60, 10%, 19%);
+    --color-text: hsl(60, 10%, 19%);
+    --equal-text: hsl(60, 10%, 19%);
+    --white: hsl(0, 0%, 100%);
 }
 
 [theme = "theme3"]{
@@ -102,10 +70,15 @@
     --toggle: hsl(176, 100%, 44%);
 
     /* text */
-    --text-1: hsl(52, 100%, 62%);
-    --text-2: hsl(198, 20%, 13%);
-    --text-white: hsl(0, 0%, 100%);
+    --panel-text: hsl(52, 100%, 62%);
+    --color-text: hsl(52, 100%, 62%);
+    --equal-text: hsl(198, 20%, 13%);
+    --white: hsl(0, 0%, 100%);
 
+}
+
+body{
+    background-color: var(--main-background);
 }
 
 .redButton.horizTranslate2 {
@@ -123,15 +96,15 @@
     -webkit-transform: translateX(0px);
 }
 
-#outerContainer {
+#themeContainer {
     position: relative;
     width: 111px;
     height: 98px;
-    background-color: #4A5B7E;
+    background-color: var(--main-background);
 }
 
 #buttonContainer {
-    background-color: #222D41;
+    background-color: var(--toggle-background);
     width: 71px;
     height: 28px;
     position: relative;
@@ -143,7 +116,7 @@
 .redButton {
     width: 16px;
     height: 16px;
-    background-color: #DB3D2B;
+    background-color: var(--toggle);
     border-radius: 8px;
     position: relative;
     top: 6px;
@@ -155,7 +128,7 @@
     display: inline-block;
     position: absolute;
     top: 23px;
-    color: #ffffff;
+    color: var(--color-text);
     font-family: Arial;
     font-size: 10pt;
     text-align: center;
@@ -167,13 +140,4 @@
     padding-bottom: 33px;
     cursor: default;
     user-select: none;
-}
-
-#message {
-    border: 1px solid #cccccc;
-    display: inline-block;
-    padding: 4px;
-    margin-top: 6px;
-    font-family: Arial;
-    font-size: 10pt;
 }
