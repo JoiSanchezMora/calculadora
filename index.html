@@ -18,87 +18,48 @@
     <div class="header">
         <h1 class="title">calc</h1>
     
-        <div class="themeContainer">
+        <div class="theme__container">
             <p class="subtitle">THEME</p>
     
-            <div id="toggleContainer">
-                <div id="buttonContainer">
-                    <div class="redButton"></div>
+            <div id="toggle__container">
+                <div id="button__container">
+                    <div class="pivot__button"></div>
                 </div>
     
-                <div id="legendTextContainer">
-                    <div class="legendText" onclick="go_to_1()">1</div>
-                    <div class="legendText" onclick="go_to_2()">2</div>
-                    <div class="legendText" onclick="go_to_3()">3</div>
+                <div id="legend__text__container">
+                    <div class="legend__text" onclick="go_to_1()">1</div>
+                    <div class="legend__text" onclick="go_to_2()">2</div>
+                    <div class="legend__text" onclick="go_to_3()">3</div>
                 </div>
             </div>
     
         </div>
     </div>
 
-    <div class="result__container">
-        <p class="result" id="result">0</p>
-    </div>
+    <div class="result__container" id="result">0</div>
 
     <div class="numbers__panel">
-        <div class="default__settings panel__text k1">
-            <p id="key_1" onclick="value()">1</p>
-        </div>
-        <div class="default__settings panel__text k2">
-            <p id="key_2" onclick="value()">2</p>
-        </div>
-        <div class="default__settings panel__text k3">
-            <p id="key_3" onclick="value()">3</p>
-        </div>
-        <div class="default__settings panel__text k4">
-            <p id="key_4" onclick="value()">4</p>
-        </div>
-        <div class="default__settings panel__text k5">
-            <p id="key_5" onclick="value()">5</p>
-        </div>
-        <div class="default__settings panel__text k6">
-            <p id="key_6" onclick="value()">6</p>
-        </div>
-        <div class="default__settings panel__text k7">
-            <p id="key_7" onclick="value()">7</p>
-        </div>
-        <div class="default__settings panel__text k8">
-            <p id="key_8" onclick="value()">8</p>
-        </div>
-        <div class="default__settings panel__text k9">
-            <p id="key_9" onclick="value()">9</p>
-        </div>
-        <div class="default__settings panel__text k0">
-            <p id="key_0" onclick="value()">0</p>
-        </div>
-        <div class="default__settings panel__text k_plus">
-            <p>+</p>
-        </div>
-        <div class="default__settings panel__text k_minus">
-            <p>-</p>
-        </div>
-        <div class="default__settings panel__text k_product">
-            <p>x</p>
-        </div>
-        <div class="default__settings panel__text k_division">
-            <p>/</p>
-        </div>
-        <div class="default__settings panel__text k_point">
-            <p>.</p>
-        </div>
-        <div class="default__settings equal__key">
-            <p>=</p>
-        </div>
-        <div class="default__settings special__panel del">
-            <p>DEL</p>
-        </div>
-        <div class="default__settings special__panel reset">
-            <p>RESET</p>
-        </div>
+        <div class="default__settings panel__text k1" id="key_1">1</div>
+        <div class="default__settings panel__text k2" id="key_2">2</div>
+        <div class="default__settings panel__text k3" id="key_3">3</div>
+        <div class="default__settings panel__text k4" id="key_4">4</div>
+        <div class="default__settings panel__text k5" id="key_5">5</div>
+        <div class="default__settings panel__text k6" id="key_6">6</div>
+        <div class="default__settings panel__text k7" id="key_7">7</div>
+        <div class="default__settings panel__text k8" id="key_8">8</div>
+        <div class="default__settings panel__text k9" id="key_9">9</div>
+        <div class="default__settings panel__text k0" id="key_0">0</div>
+        <div class="default__settings panel__text k_plus" id="k_plus">+</div>
+        <div class="default__settings panel__text k_minus" id="k_minus">-</div>
+        <div class="default__settings panel__text k_product" id="k_product">x</div>
+        <div class="default__settings panel__text k_division" id="k_division">/</div>
+        <div class="default__settings panel__text k_point" id="k_point">.</div>
+        <div class="default__settings equal__key" id="k_equal">=</div>
+        <div class="default__settings special__panel del" id="k_del">DEL</div>
+        <div class="default__settings special__panel reset" id="k_reset">RESET</div>
     </div>
 
     
-
     <script src="js/js.js"></script>
 </body>
 </html>

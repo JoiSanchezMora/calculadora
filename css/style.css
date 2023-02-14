@@ -101,19 +101,19 @@ body{
     padding-bottom: 12px;
 }
 
-.themeContainer{
+.theme__container{
     display: flex;
     align-items: flex-end;
 }
 
-#toggleContainer {
+#toggle__container {
     position: relative;
     width: 111px;
     height: 65px;
     background-color: var(--main-background);
 }
 
-#buttonContainer {
+#button__container {
     background-color: var(--toggle-background);
     width: 71px;
     height: 28px;
@@ -123,7 +123,7 @@ body{
     border-radius: 14px;
 }
 
-.redButton {
+.pivot__button {
     width: 16px;
     height: 16px;
     background-color: var(--toggle);
@@ -133,23 +133,23 @@ body{
     left: 6px;
 }
 
-.redButton.horizTranslate2 {
+.pivot__button.horiz__translate2 {
     -webkit-transition: -webkit-transform 0.1s linear;
     -webkit-transform: translateX(20px);
 }
 
-.redButton.horizTranslate3 {
+.pivot__button.horiz__translate3 {
     -webkit-transition: -webkit-transform 0.1s linear;
     -webkit-transform: translateX(40px);
 }
 
-.redButton.horizTranslate1 {
+.pivot__button.horiz__translate1 {
     -webkit-transition: -webkit-transform 0.1s linear;
     -webkit-transform: translateX(0px);
 }
 
 
-#legendTextContainer {
+#legend__text__container {
     left: 22px;
     display: inline-block;
     position: absolute;
@@ -159,7 +159,7 @@ body{
     text-align: center;
 }
 
-.legendText {
+.legend__text {
     display: inline-block;
     width: 20px;
     padding-bottom: 20px;
@@ -176,9 +176,6 @@ body{
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
-}
-
-.result{
     color: var(--color-text);
     font-weight: 700;
     font-size: 50px;
