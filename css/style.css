@@ -88,6 +88,7 @@ body{
     width: 90%;
     margin: 20px auto;
     align-items: center;
+    max-width: 350px;
 }
 
 .title{
@@ -180,6 +181,7 @@ body{
     font-weight: 700;
     font-size: 50px;
     padding: 20px;
+    max-width: 350px;
 }
 
 .numbers__panel{
@@ -198,6 +200,7 @@ body{
     gap: 15px;
     padding: 25px;
     border-radius: 10px;
+    max-width: 350px;
 }
 
 .default__settings{
